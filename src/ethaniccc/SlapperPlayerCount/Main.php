@@ -18,8 +18,8 @@ class Main extends PluginBase implements Listener
 
     private $worldPlayerCount = null;
 
-    public function onEnable()
-    {
+    public function onEnable():void
+{
         /* :eyes: */
         if ($this->getConfig()->get("version") !== $this->getDescription()->getVersion()) {
             $this->saveResource("config.yml");
